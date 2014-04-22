@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="copyright" content="Copyright (c) 2012 Inspirus LLC. All Rights Reserved.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link type="image/x-icon" rel="shortcut icon"  href="/cng/images/favicon.png" />
+		<link type="text/css" rel="stylesheet" href="/cng/css/default.css">
+		
+		<link rel="stylesheet" href="/cng/bootstrap/css/bootstrap.min.css">
+	</head>
+		<body>
+			
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="hero-unit">
+			        		<h1 style="font-size: 150px;">400<span style="font-size: 40px;"> Uh oh, an error has occurred!&nbsp;&nbsp;</span></h1>
+			        		
+			        		<p>Something went wrong with your request.  We're sorry for the inconvenience.</p>
+			        		<p><button class="btn btn-inverse btn-large" onclick="history.go(-1);"><i class=" icon-arrow-left icon-white"></i> Click this button to go back</button></p>
+			      		</div>
+		      		</div>
+		      	</div>
+      		</div>
+
+		<script type="text/javascript" src="/cng/js/jquery-1.7.1.min.js"></script>
+		<script src="/cng/bootstrap/js/bootstrap.min.js"></script>	
+	</body>
+	
+
+</html>

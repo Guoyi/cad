@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<project name="cad" basedir="." default="synch">
+	<target name="synch">
+		<echo>Synchronizing CAD Project</echo>
+		<sync todir="target/cad">
+			<fileset dir="src/main/webapp">
+				<include name="**/*.*" />
+			</fileset>
+			<preserveintarget>
+				<include name="**/WEB-INF/lib/**" />
+				<include name="**/WEB-INF/classes/**" />
+			</preserveintarget>
+		</sync>
+	</target>
+</project>
