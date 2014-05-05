@@ -7,6 +7,8 @@
 	xmlns:p="http://www.springframework.org/schema/p"
 	xmlns:ehcache="http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring"
 	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	
 	xsi:schemaLocation="
 	http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
@@ -19,11 +21,13 @@
     http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring 
   	http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring/ehcache-spring-1.2.xsd
   	http://www.springframework.org/schema/task 
-  	http://www.springframework.org/schema/task/spring-task-3.1.xsd">
+  	http://www.springframework.org/schema/task/spring-task-3.1.xsd
+  	http://www.springframework.org/schema/data/jpa
+    http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 
 	<context:annotation-config/>
 	
-	<context:component-scan base-package="com.guoyi.cad.service"/>
+	<context:component-scan base-package="com.guoyi.cad"/>
 	
 	<!-- Define the DataSource info (parameterized for configuration via a PropertyPlaceHolderConfigurer) -->
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -61,12 +65,25 @@
 		</property>
 	</bean>
 
-	<bean id="transactionManager"
+	<!-- <bean id="transactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="dataSource" />
-	</bean>
+	</bean> -->
 	
 	<tx:annotation-driven/>
+
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="persistenceUnitName" value="myJPA" />
+	</bean>
+
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean> 
+	
+	<tx:annotation-driven transaction-manager="transactionManager"/> 
+	
+	<jpa:repositories base-package="com.guoyi.cad.repository"/>
+        
 	<!-- 
 	<bean class="com.inspirus.cng.web.filter.UserSecurityFilter" id="userSecurityFilter" />
 	 -->

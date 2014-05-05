@@ -11,7 +11,7 @@
 
 	<properties>
 		<netbeans.hint.deploy.server>Tomcat</netbeans.hint.deploy.server>
-		<org.springframework-version>3.1.2.RELEASE</org.springframework-version>
+		<org.springframework-version>4.0.4.RELEASE</org.springframework-version>
 		<openam.version>10.0.1</openam.version>
 	</properties>
 
@@ -168,12 +168,12 @@
 			<version>${org.springframework-version}</version>
 			<scope>compile</scope>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-asm</artifactId>
 			<version>${org.springframework-version}</version>
 			<scope>compile</scope>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
@@ -233,6 +233,17 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 			<scope>compile</scope>
+		</dependency>
+		<dependency>
+	        <groupId>org.springframework.data</groupId>
+	        <artifactId>spring-data-jpa</artifactId>
+	        <version>1.5.2.RELEASE</version>
+	        <scope>compile</scope>
+	    </dependency>
+	    <dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>4.3.5.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>org.quartz-scheduler</groupId>
