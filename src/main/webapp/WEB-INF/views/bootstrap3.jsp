@@ -5,15 +5,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="<c:url value='/js/jquery-1.9.1.js'/>"></script>
-<script type="text/javascript" src="<c:url value='/js/test.js'/>"></script>
-<script type="text/javascript" src="<c:url value='/bootstrap3/js/bootstrap.js'/>"></script>
-<link type="text/css" rel="stylesheet" href="<c:url value="/css/test.css"/>"></link>
-<link type="text/css" rel="stylesheet" href="<c:url value="/bootstrap3/css/bootstrap.css"/>"></link>
-<link type="text/css" rel="stylesheet" href="<c:url value="/bootstrap3/css/bootstrap-theme.css"/>"></link>
-<title>Insert title here</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="<c:url value='/js/jquery-1.9.1.js'/>"></script>
+  <script type="text/javascript" src="<c:url value='/js/test.js'/>"></script>
+  <script type="text/javascript" src="<c:url value='/bootstrap3/js/bootstrap.js'/>"></script>
+  <link type="text/css" rel="stylesheet" href="<c:url value="/css/test.css"/>"></link>
+  <link type="text/css" rel="stylesheet" href="<c:url value="/bootstrap3/css/bootstrap.css"/>"></link>
+  <link type="text/css" rel="stylesheet" href="<c:url value="/bootstrap3/css/bootstrap-theme.css"/>"></link>
+  <title>Insert title here</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="container">
