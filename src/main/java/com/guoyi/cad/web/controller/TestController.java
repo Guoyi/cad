@@ -11,9 +11,9 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value="/test")
 public class TestController {
 	
-	@RequestMapping(value="/test.htm")
+	@RequestMapping(value="/bootstrap3.htm")
 	public ModelAndView gotoTest(HttpServletRequest req, HttpServletResponse res) {
-		ModelAndView model = new ModelAndView("test");
+		ModelAndView model = new ModelAndView("bootstrap3");
 		return model;
 	}
 
