@@ -42,8 +42,20 @@
       <div class="col-md-12">
         <a class="btn btn-default" href="#" data-role="button">Link</a>
         <button class="btn btn-default" type="submit">Button</button>
-        <input class="btn btn-default" type="button" value="Input">
-        <input class="btn btn-default" type="submit" value="Submit">
+        <input class="btn btn-default" type="button" value="Input"> <input class="btn btn-default" type="submit" value="Submit">
+
+      </div>
+
+      <div class="col-md-12">
+        <label class="checkbox" for="chktest"> <input type="checkbox" id="chktest" value="" data-toggle="checkbox"> This is a test
+          check box.
+        </label> 
+        <label class="radio"> 
+          <input type="radio" name="group1" value="1" data-toggle="radio"> Radio is off
+        </label>
+        <label class="radio">
+          <input type="radio" name="group1" value="1" data-toggle="radio" checked="checked"> Radio is on
+        </label>
 
       </div>
 
